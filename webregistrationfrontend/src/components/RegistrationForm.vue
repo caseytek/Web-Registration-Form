@@ -150,7 +150,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Yantramanav&display=swap");
 #headline {
   width: 75%;
   margin: 0 10% 0 10%;
@@ -158,11 +157,16 @@ export default {
   background: #466a46;
   padding: 7px;
   border: 2px solid white;
-}
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+ }
 #headline p {
-  margin: 10px 0 10px 0;
   color: white;
   font-size: 18px;
+  flex: 1 0 0;
+  text-align: center;
 }
 .error-list {
   text-align: center;
@@ -257,7 +261,7 @@ b {
   color: #fff;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   #registration {
     margin: 10%;
   }
